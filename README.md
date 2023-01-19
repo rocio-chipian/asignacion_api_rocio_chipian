@@ -1,6 +1,6 @@
 
 
-## **Resolución de la asignación planteada "Asignación Backend - Wisboo":**  [asignacion-backend3.pdf](https://github.com/rociochipian/asignacion_api_rocio_chipian/files/10459691/asignacion-backend3.pdf)
+## **Resolución de la asignación planteada "Asignación Backend - Wisboo"**
 
 **Parte 1: Práctica**  
 
