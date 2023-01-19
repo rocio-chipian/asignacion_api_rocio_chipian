@@ -11,10 +11,7 @@ class ProductsController < ApplicationController
         query = params[:query]
         currency = params[:currency]
 
-        render json: {
-            metadata: pagination_metadata(page, size),
-            products: ProductsService.list_products(page, size, query, currency)
-        }
+        render json: ProductsService.list_products(page, size, query, currency)
     end
 
     def product_params
