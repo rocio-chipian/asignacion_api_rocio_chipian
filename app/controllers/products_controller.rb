@@ -5,10 +5,16 @@ class ProductsController < ApplicationController
 
     def list_products
         params = product_params
-        render json: ProductsService.list_products(params[:page].try(:to_i) || DEFAULT_PAGE,
-                                                    params[:size].try(:to_i) || DEFAULT_SIZE,
-                                                    params[:query],
-                                                    params[:currency])
+
+        page = params[:page].try(:to_i) || DEFAULT_PAGE
+        size = params[:size].try(:to_i) || DEFAULT_SIZE
+        query = params[:query]
+        currency = params[:currency]
+
+        render json: {
+            metadata: pagination_metadata(page, size),
+            products: ProductsService.list_products(page, size, query, currency)
+        }
     end
 
     def product_params
