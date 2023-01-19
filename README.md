@@ -1,24 +1,22 @@
 
 
-## **Resolución de la asignación planteada "Asignación Backend - Wisboo":**
+## **Resolución de la asignación planteada "Asignación Backend - Wisboo":**  [asignacion-backend3.pdf](https://github.com/rociochipian/asignacion_api_rocio_chipian/files/10459691/asignacion-backend3.pdf)
 
-**Parte 1: Práctica**
+**Parte 1: Práctica**  
 
- [asignacion-backend3.pdf](https://github.com/rociochipian/asignacion_api_rocio_chipian/files/10459691/asignacion-backend3.pdf)
-
-*Versiones usadas:*
--Ruby version: 3.2.0
+*Versiones usadas:*  
+-Ruby version: 3.2.0  
 -Rails version: 7.0.a.1
 
-*Para levantar la API en el puerto 3000:*
--`rails db:migrate` (para popular la base con algunos Product de ejemplo)
+*Para levantar la API en el puerto 3000:*  
+-`rails db:migrate` (para popular la base con algunos Product de ejemplo)  
 -`rails s`
 
-*Para correr los tests:*
+*Para correr los tests:*  
 -`rspec`
 
-Para consultar la API:
--POST /products?page=1&size=1&query&currency
+*Para consultar la API:*  
+-POST /products?page=1&size=1&query&currency  
 -query de ejemplo: POST /http://localhost:3000/products/?size=10&page=1&query=curs&currency=USD
 
 **Parte 2: Teórica**
